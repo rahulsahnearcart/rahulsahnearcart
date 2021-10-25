@@ -1,10 +1,10 @@
-- 👋 Hi, I’m @rahulsahnearcart
-- 👀 I’m interested in data science and artficial inteligence
-- 🌱 I’m currently learning online bsc degree from iit madras
-- 💞️ i just want leaern 
-- 📫 my email id - rahulsahkumar70@gmail.com
+import phonenumbers
+from phonenumbers import carrier, geocoder, timezone
 
-<!---
-rahulsahnearcart/rahulsahnearcart is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+mobileNo=input("+917061367534")
+mobileNo=phonenumbers.parse(+917061367534)
+print(timezone.time_zones_for_number(+917061367534))
+print(carrier.name_for_number(+917061367534,"en"))
+print(geocoder.description_for_number(+917061367534,"en"))
+print("Valid Mobile Number:",phonenumbers.is_valid_number(+917061367534))
+print("Checking possibility of Number:",phonenumbers.is_possible_number(+917061367534))
